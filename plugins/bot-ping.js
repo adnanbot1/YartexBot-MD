@@ -35,9 +35,9 @@ let texto = `*🚀 السرعه*
 conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'سرعه البوت', thumbnailUrl: 'https://telegra.ph/file/4f3c8f903ad4d5734a44b.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
 
 }
-handler.help = ['ping']
+handler.help = ['بينج']
 handler.tags = ['bot']
-handler.command = ['ping', 'speed']
+handler.command = ['بينج', 'speed']
 
 handler.register = true
 
