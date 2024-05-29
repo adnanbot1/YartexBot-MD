@@ -7,14 +7,14 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath, pathToFileURL } from 'url'
 
-global.owner = [['524531287294', 'CuriosityBot-MD 🍧', true], ['447700168473', '👑 𝐎𝐰𝐧𝐞𝐫 👑', true], ['5217294888993'], ['5214531287294'], ['5492266466080'], ['5492266613038'], ['573012482597'], ['5215610314499'], ['51935531943'], ['33760536110'], ['59162714296'], ['5492964650915'], ['50558124470'], ['5214434703586'], ['18293132203'], ['573003025991']]
+global.owner = [['967776643812', '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑 🍧', true], ['967776643812', '👑 𝒍𝒐𝒔𝒆𝒇𝒂𝒓 👑', true], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['967776643812'], ['5214434703586'], ['18293132203'], ['573003025991']]
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
 global.botNumberCode = '' //Ejemplo: +59309090909
 global.confirmCode = ''
 
-global.suittag = ['5214531287294']
+global.suittag = ['967776643812']
 global.mods = []
 global.prems = []
 
@@ -23,21 +23,21 @@ global.isdev = [ /* ['5217294888993'], */ ['5214434703586'], ['5492266466080'], 
 
 //Aqui encuentras los nombres del bot 
 global.packname = ''
-global.author = 'YartexBot-MD'
-global.wm = 'Yartex Bot - MD'
-global.wm2 = 'Yartex : Bot'
-global.gatanina = 'GataNina-Li'
-global.cb = 'YartexBot'
+global.author = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
+global.wm = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
+global.wm2 = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
+global.gatanina = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
+global.cb = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
 
 
 //Las Versiones Y Entre Otros
 global.vs = 'V2'
-global.library = 'Baileys'
-global.baileys = '@whiskeysockets/baileys'
+global.library = 'لوسيفار'
+global.baileys = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
 global.dev = 'GataNina-Li'
-global.devnum = '+593 96 826 3524'
+global.devnum = '+967776643812'
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => { unwatchFile(file)
