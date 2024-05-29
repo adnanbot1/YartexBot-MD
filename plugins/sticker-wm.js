@@ -17,7 +17,7 @@ if (Buffer.isBuffer(e)) stiker = e
 if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, false, { asSticker: true })
 else throw '⚠️ 𝐈𝐍𝐓𝐄𝐍𝐓𝐄 𝐃𝐄 𝐍𝐔𝐄𝐕𝐎'
 }}
-handler.help = ['wm <packname>|<author>']
+handler.help = ['سرقة|<يسرق حقوق الملصقات>']
 handler.tags = ['sticker']
-handler.command = /^wm$/i
+handler.command = /^سرقة$/i
 export default handler
