@@ -7,17 +7,17 @@ if (m.chat.endsWith('broadcast') || m.fromMe || m.isGroup) return
 let user = global.db.data.users[m.sender]
 
 if (new Date() - user.pc < 86400000) return
-await conn.reply(m.chat, `👋 Hola ${nombre}!!
+await conn.reply(m.chat, `👋 اهلا ${nombre}!!
  *${saludo}*
 
-📅 Fecha: ${fecha}
-⏰ Hora: ${tiempo}
+📅 التاريخ: ${fecha}
+⏰ الساعه: ${tiempo}
 
-⚠️ *Nota:* no envíe spam al bot
-🧃 Escriba *.menu* para mostrar el menú 
+⚠️ *ملاحظه:* لاترسل بريدأ عشوائيأ
+🧃 ملاحظه *.الاوامر لعرض قائمه البوت* اكتب 
   
-📝 ¿Quieres apoyar este proyecto para que siga actualizándose? únete a nuestro grupo: 
-*https://chat.whatsapp.com/EfWlxyVXlZ7AWVJ6sjJvyI*`, m, fake, )
+📝 ¿هل تريد دعم هذا المشروع حتى يستمر في التحديث؟ انضم لمجموعتنا: 
+*https://whatsapp.com/channel/0029Vag5yfZJf05mDF9kcU2w*`, m, fake, )
 
 
 user.pc = new Date * 1
