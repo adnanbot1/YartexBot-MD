@@ -8,9 +8,8 @@ let reglas = `🎌 *Respeta las reglas de CuriosityBot*\n
 
 🚩 *Si no cumples con las reglas del bot, seras bloqueado.*
 
-*Puedes apoyarnos dejando una estrellita 🌟 al repositorio oficial de CuriosityBot.*
-
-https://github.com/AzamiJs/CuriosityBot-MD`.trim()
+*يمكنك دعمنا من خلال ترك نجمة 🌟 𝐁𝐎𝐓 𝗟𝐎𝐒𝐄𝐅𝐀𝐑.*
+https://whatsapp.com/channel/0029Vag5yfZJf05mDF9kcU2w`.trim()
 await conn.reply(m.chat, reglas, m, fake, )
 
 }
