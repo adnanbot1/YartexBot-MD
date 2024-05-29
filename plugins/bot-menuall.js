@@ -22,14 +22,14 @@ let tags = {
 'imagenes': 'Imagenes 🖼️',
 }
 const defaultMenu = {
-before: `> ╭─❒ 「 *Usuario* 🎗️ 」
-> │○ *Cliente:* %name
-> │○ *Limite:* %diamond
-> │○ *Nivel:* %level
-> │○ *Rango:* %role
-> │○ *Exp:* %exp
+before: `> ╭─❒ 「 *𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑* 🎗️ 」
+> │○ *المستخدم:* %name
+> │○ *المستخدمين:* %diamond
+> │○ *المستوى:* %level
+> │○ *الرتبة:* %role
+> │○ *الخبرة:* %exp
 > │
-> ├─❒ 「 *InfoBot* 🚩 」
+> ├─❒ 「 *𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑* 🚩 」
 > │○ *Creador:* GataNina-Li
 > │○ *Tiempo Activo:* %muptime
 > │○ *Registrados:* %rtotalreg De %totalreg Usuarios
@@ -157,9 +157,9 @@ azami.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
 throw e}
 
 }
-handler.help = ['help', 'allmenu']
+handler.help = ['المهام', 'الاوامر']
 handler.tags = ['info']
-handler.command = ['help', 'menucompleto', 'allmenu'] 
+handler.command = ['الاوامر', 'menucompleto', 'المهام'] 
 handler.register = true
 
 export default handler
