@@ -4,13 +4,13 @@ if (text) {
 if (isROwner) global.conn.bye = text
 else if (isOwner) conn.bye = text
 else global.db.data.chats.sBye = text
-conn.reply(m.chat, '✅ *Configurado correctamente*', m, fake, )
-} else return conn.reply(m.chat, '🎌 *Ingrese el texto que quiere que se envíe al salirse una persona*\n\nPuede usar @user para etiquetar', m, fake, )
+conn.reply(m.chat, '✅ *تم تكوينه بشكل صحيح*', m, fake, )
+} else return conn.reply(m.chat, '🎌 *أدخل النص الذي تريد إرساله عندما يغادر الشخص*\n\nيمكنك استخدام @المستخدم للتسمية', m, fake, )
 
 }
-handler.help = ['setbye']
+handler.help = ['المغادره']
 handler.tags = ['grupo']
-handler.command = /^setbye$/i
+handler.command = /^المغادره$/i
 
 handler.group = true
 handler.admin = true
