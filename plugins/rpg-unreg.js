@@ -3,9 +3,9 @@ let handler = async (m, { conn, text }) => {
 let user = global.db.data.users[m.sender]
   
 user.registered = false
-m.reply(`*📇 USTED YA NO ESTÁ REGISTRADO*`)
+m.reply(`*📇 لم تعد مسجلأ*`)
 
 }
-handler.command = ['unreg']
+handler.command = ['حذف']
 handler.register = true
 export default handler
