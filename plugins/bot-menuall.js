@@ -16,10 +16,10 @@ let tags = {
 'rg': 'RPG 🌱',
 'audio': 'Audios - Efectos 🎶', 
 'tools': 'Herramientas 🧰', 
-'anime': 'Anime 📍', 
+'anime': 'قسم الانمي 📍', 
 'own': 'Propietario 👑',
 'ai': 'Inteligencia Artificial 🙋🏻‍♂️',
-'imagenes': 'Imagenes 🖼️',
+'imagenes': 'قسم تحميل الصور 🖼️',
 }
 const defaultMenu = {
 before: `> ╭─❒ 「 *𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑* 🎗️ 」
@@ -30,17 +30,17 @@ before: `> ╭─❒ 「 *𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑* 🎗️ 」
 > │○ *الخبرة:* %exp
 > │
 > ├─❒ 「 *𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑* 🚩 」
-> │○ *Creador:* GataNina-Li
-> │○ *Tiempo Activo:* %muptime
-> │○ *Registrados:* %rtotalreg De %totalreg Usuarios
+> │○ *المطور:* لوسيفار
+> │○ *وقت النشاط:* %muptime
+> │○ *المنصه:* %هيركوه
 > │
-> ├─❒ 「 *Hoy* 📅 」
-> │○ *Fecha:* %date
+> ├─❒ 「 *اهلا بك* 📅 」
+> │○ *التاريخ:* %date
 > ╰──────────────
 %readmore`.trimStart(),
 
 header: '> ╭─❒ 「 *%category* 」',
-body: '> │○  %cmd',
+body: '> │シ  %cmd',
 footer: '> ╰───────────\n',
 after: `
 `,
@@ -145,7 +145,7 @@ readmore: readMore
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
 let whoPP = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let ppBot = await azami.profilePictureUrl(whoPP, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+let ppBot = await azami.profilePictureUrl(whoPP, 'image').catch((_) => 'https://telegra.ph/file/c2920c8baf710e0b476a4.jpg')
   
 await azami.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.ig, thumbnailUrl: ppBot }}})
 m.react('🚀') 
