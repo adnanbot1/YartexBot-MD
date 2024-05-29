@@ -6,8 +6,8 @@ throw false
 }
 
 let pesan = args.join` `
-let oi = `Mensaje: ${pesan}`
-let teks = `🚩 *Cluster - Tag All*\n\n${oi}\n\n`
+let oi = `يتم استدعائكم: ${pesan}`
+let teks = `🚩 *حضور*\n\n${oi}\n\n`
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
