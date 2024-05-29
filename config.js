@@ -34,9 +34,9 @@ global.cb = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
 global.vs = 'V2'
 global.library = 'لوسيفار'
 global.baileys = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
-global.lenguaje = 'Español'
+global.lenguaje = 'Arab'
 global.menudi = ['⛶','❏','⫹⫺']
-global.dev = 'GataNina-Li'
+global.dev = '𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑'
 global.devnum = '+967776643812'
 
 let file = fileURLToPath(import.meta.url)
