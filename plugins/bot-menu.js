@@ -32,26 +32,26 @@ const fload = { key : { message: `YartexBot-MD 🌟` + `\nGataNina-Li`, thumbnai
 
 m.react('🌟')
   
-let menu = `*👋 Hola, ${user}*
+let menu = `*👋 اهلا, ${user}*
 
-*País*: ${nombreLugar} 
-*Ciudad*: ${ciudad}
+*الدوله*: ${nombreLugar} 
+*المدينه*: ${ciudad}
 
-!allmenu
-_(Para ver el menú completo)_
+!اوامر
+_(لمشاهده القائمة اكتب.اوامر)_
 
-!menu2
-_(Para ver el menu audios)_`
+!اوامر2
+_(لمشاهده الاوامر الصوتيه .اوامر2)_`
 
 await conn.reply(m.chat, menu, a, { contextInfo: { externalAdReply: {title: '👋 ¡Hola!', body: saludo, sourceUrl: ig, thumbnail: await (await fetch(pp)).buffer() }}})
 
 } catch {
-conn.reply(m.chat, `*❗️ Ocurrió un error*`, m, fake, )
+conn.reply(m.chat, `*❗️ لم يتم الاستجابه*`, m, fake, )
 console.log(e)
 }}
-handler.help = ['menu']
+handler.help = ['اوامر']
 handler.tags = ['bot']
-handler.command = /^(menu)$/i
+handler.command = /^(اوامر)$/i
 handler.register = true
 
 export default handler
