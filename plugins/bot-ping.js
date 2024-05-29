@@ -20,20 +20,19 @@ let chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats
 let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats && !chat.metadata?.read_only && !chat.metadata?.announce).map(v => v[0])
 
 
-let texto = `*🚀 Velocidad*
+let texto = `*🚀 السرعه*
 • ${latensi.toFixed(4)}
 
-*⏰ Actividad*
+*⏰ وقت النشاط*
 • ${muptime}
 
-*💌 Chats*
-• ${chats.length} *Chats privados*
-• ${groups.length} *Grupos*
+*💌 الدردشه*
+• ${chats.length} *الدردشه الخاصه*
+• ${groups.length} *الجروبات*
 
-*💻 Servidor*
-• *Ram:* ${format(totalmem() - freemem())} / ${format(totalmem())}`.trim()
-
-conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'CURIOSITY - BOT - MD', thumbnailUrl: 'https://telegra.ph/file/6cbf9148b572711e9b000.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+*💻 الخادم*
+• *الرام:* ${format(totalmem() - freemem())} / ${format(totalmem())}`.trim
+conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'سرعه البوت', thumbnailUrl: 'https://telegra.ph/file/4f3c8f903ad4d5734a44b.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
 
 }
 handler.help = ['ping']
