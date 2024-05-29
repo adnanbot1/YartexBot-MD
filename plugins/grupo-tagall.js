@@ -17,9 +17,9 @@ teks += `• @${username.id.split('@')[0]}\n`}
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 
 }
-handler.help = ['tagall']
+handler.help = ['منشن']
 handler.tags = ['grupo']
-handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i
+handler.command = /^(منشن|invocar|invocacion|todos|invocación)$/i
 
 handler.botAdmin = true
 handler.admin = true
