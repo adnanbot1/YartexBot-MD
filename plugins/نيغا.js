@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
    }
   })
 
-    conn.sendFile(m.chat, 'https://telegra.ph/file/caafdb2292db8180b99fe.mp4', 'video.mp4' , message, m);
+    conn.sendFile(m.chat, 'https://telegra.ph/file/9c1fd4c1dfdb3c49d9173.mp4', 'video.mp4' , message, m);
 };
 
 handler.customPrefix = /^(نيغا|بوت|زنجي|يازنجي)$/i;
