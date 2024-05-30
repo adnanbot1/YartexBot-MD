@@ -26,9 +26,9 @@ conn.reply(m.chat, `✅ *Se degrado de admin con éxito*`, m, fake, )
 }
 
 }
-handler.help = ['demote']
+handler.help = ['تخفيض']
 handler.tags = ['grupo']
-handler.command = ['demote', 'degradar']
+handler.command = ['تخفيض', 'degradar']
 
 handler.group = true
 handler.admin = true
