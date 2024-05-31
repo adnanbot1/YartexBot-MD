@@ -3,21 +3,21 @@
 var handler = async (m, { conn }) => {
 
 await conn.fetchBlocklist().then(async data => {
-let txt = `⬣ *LISTA DE BLOQUEADOS*
+let txt = `⬣ *القائمة المحظورة*
 
-Total bloqueados : *${data.length}*\n\n`
+مجموع المحظورين : *${data.length}*\n\n`
 for (let i of data) {
 txt += `⬡ @${i.split('@')[0]}\n`}
 txt += '────────────────────────'
 return conn.reply(m.chat, txt, m, { mentions: await conn.parseMention(txt) })
 }).catch(err => {
 console.log(err)
-return conn.reply(m.chat, '🚩 *No hay números bloqueados*', m, fake, )})
+return conn.reply(m.chat, '🚩 *لا توجد أرقام محظورة*', m, fake, )})
 
 }
-handler.help = ['blocklist']
+handler.help = ['المحظورين']
 handler.tags = ['own']
-handler.command = ['blocklist', 'listblock'] 
+handler.command = ['المحظورين', 'listblock'] 
 
 handler.rowner = true
 
