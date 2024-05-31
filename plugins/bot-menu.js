@@ -52,7 +52,7 @@ console.log(e)
 handler.help = ['اوامر']
 handler.tags = ['bot']
 handler.command = /^(اوامر)$/i
-handler.register = true
+handler.register = false
 
 export default handler
 
