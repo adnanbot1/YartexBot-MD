@@ -30,13 +30,13 @@ filesDeleted++;
 console.log(`⚠️ Eliminacion session (PreKey) que provocan el undefined el chat`)}}}
 
 if (chat.detect2 && m.messageStubType == 21) {
-await this.sendMessage(m.chat, { text: `🚩 ${usuario} *Ha cambiado el nombre del grupo*`, mentions: [m.sender], mentions: (await conn.groupMetadata(m.chat)).participants.map(v => v.id) }, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100}) 
+await this.sendMessage(m.chat, { text: `🚩 ${usuario} *لقد تغير اسم المجموعة*`, mentions: [m.sender], mentions: (await conn.groupMetadata(m.chat)).participants.map(v => v.id) }, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100}) 
 
 } else if (chat.detect2 && m.messageStubType == 22) {
-await this.sendMessage(m.chat, { text: `🚩 ${usuario} *Ha cambiado la imágen del grupo*`, mentions: [m.sender] }, { quoted: fliveLoc, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100}) 
+await this.sendMessage(m.chat, { text: `🚩 ${usuario} *لقد تغيرت صورة المجموعة*`, mentions: [m.sender] }, { quoted: fliveLoc, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100}) 
 
 } else if (chat.detect2 && m.messageStubType == 24) {
-await this.sendMessage(m.chat, { text: `🚩 ${usuario} *Ha modificado la descripción!*\n\nNueva descripción:\n\n${m.messageStubParameters[0]}`, mentions: [m.sender] }, { quoted: fliveLoc, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+await this.sendMessage(m.chat, { text: `🚩 ${usuario} *لقد قمت بتعديل الوصف!*\n\nNueva descripción:\n\n${m.messageStubParameters[0]}`, mentions: [m.sender] }, { quoted: fliveLoc, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
 
 } else if (chat.detect2 && m.messageStubType == 25) {
 await this.sendMessage(m.chat, { text: `🚩 *Ahora ${m.messageStubParameters[0] == 'on' ? 'solo admins' : 'todos'} pueden editar la información del grupo*`, mentions: [m.sender] }, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
