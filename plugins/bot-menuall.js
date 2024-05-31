@@ -157,9 +157,9 @@ azami.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
 throw e}
 
 }
-handler.help = ['المهام', 'الاوامر']
+handler.help = ['المهام', 'اوامر']
 handler.tags = ['info']
-handler.command = ['الاوامر', 'menucompleto', 'المهام'] 
+handler.command = ['اوامر', 'menucompleto', 'المهام'] 
 handler.register = true
 
 export default handler
