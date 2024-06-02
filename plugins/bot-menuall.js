@@ -22,15 +22,15 @@ let tags = {
 'imagenes': 'قسم تحميل الصور 🖼️',
 }
 const defaultMenu = {
-before: `> ╭─❒ 「 *𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑* 🎗️ 」
+before: `> ╭─❒ 「 *بوت-丫:١⁶𝑘𝑎𝑝𝑎𝑠* 🎗️ 」
 > │○ *المستخدم:* %name
 > │○ *المستخدمين:* %diamond
 > │○ *المستوى:* %level
 > │○ *الرتبة:* %role
 > │○ *الخبرة:* %exp
 > │
-> ├─❒ 「 *𝐁𝐎𝐓-𝗟𝐎𝐒𝐄𝐅𝐀𝐑* 🚩 」
-> │○ *المطور:* لوسيفار
+> ├─❒ 「 *بوت-ڪَباؘسِ丫* 🚩 」
+> │○  *المطور:*ڪَباؘسِ丫
 > │○ *وقت النشاط:* %muptime
 > │○ *المنصه:* %هيركوه
 > │
@@ -147,7 +147,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 let whoPP = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let ppBot = await azami.profilePictureUrl(whoPP, 'image').catch((_) => 'https://telegra.ph/file/c2920c8baf710e0b476a4.jpg')
   
-await azami.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.ig, thumbnailUrl: ppBot }}})
+await azami.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 مرحبا!!', body: saludo, sourceUrl: global.ig, thumbnailUrl: ppBot }}})
 m.react('🚀') 
 
 azami.sendMessage(m.chat, {text: text.trim(), mentions: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: { mentionedJid: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen2, "mediaUrl": group, "sourceUrl": group}}}, {quoted: fkontak});
@@ -157,9 +157,9 @@ azami.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
 throw e}
 
 }
-handler.help = ['المهام', 'الاوامر']
+handler.help = ['المهام', 'اوامر']
 handler.tags = ['info']
-handler.command = ['الاوامر', 'menucompleto', 'المهام'] 
+handler.command = ['اوامر', 'menucompleto', 'المهام'] 
 handler.register = true
 
 export default handler

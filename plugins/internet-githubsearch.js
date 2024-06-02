@@ -45,7 +45,7 @@ handler.register = true
 
 export default handler 
 
-function formatDate(n, locale = 'es') {
+function formatDate(n, locale = 'ar') {
 let d = new Date(n)
 return d.toLocaleDateString(locale, {
 weekday: 'long',
